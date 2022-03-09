@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.container{
+margin: auto;
+width: 60%;
+border: 5px solid black;
+padding: 10px;
+}
+.form-check{
+margin: auto;
+width: 60%;
+padding: 10px;
+}
+.img-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+</head>
+<body>
+<form method="POST" action="CoffeeServlet">
+
+<div class="container">
+<div class="img-container">
+	<img src="coffee.png" height='200' width='200'>
+</div>
+<b>Vous souhaitez faire une remarque ou une suggestion concernant:</b><br	>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="radioselect" id="exampleRadios1" value="composition" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    La composition des menus
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="radioselect" id="exampleRadios2" value="qualité">
+  <label class="form-check-label" for="exampleRadios2">
+    La qualité du service
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="radioselect" id="exampleRadios2" value="prix">
+  <label class="form-check-label" for="exampleRadios2">
+    Les prix pratiqués
+</div>
+  </label>
+  <div>
+	<b>Précisez votre demande:</b>
+	 <textarea class="form-control" name="textermarque" id="exampleFormControlTextarea1" rows="3"></textarea>
+	</div>
+	<br>
+	<div class="button">
+	<button type="submit" class="btn btn-primary">Valider!</button>
+	</div>
+</div>
+
+</form>
+</body>
+</html>
